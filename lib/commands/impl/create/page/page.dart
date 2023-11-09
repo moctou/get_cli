@@ -1,6 +1,5 @@
 import 'dart:io';
 
-
 import 'package:dcli/dcli.dart';
 import 'package:recase/recase.dart';
 
@@ -24,7 +23,7 @@ class CreatePageCommand extends Command {
   String get commandName => 'page';
 
   @override
-  List<String> get alias => ['module', '-p', '-m'];
+  List<String> get alias => ['feature', '-p', '-f'];
   @override
   Future<void> execute() async {
     var isProject = false;
