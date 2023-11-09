@@ -14,7 +14,7 @@ class Structure {
                 path: '${Directory.current.path} /lib/pages/'))
             .existsSync()
         ? replaceAsExpected(path: 'lib/pages')
-        : replaceAsExpected(path: 'lib/app/modules'),
+        : replaceAsExpected(path: 'lib/app/features'),
     'widget': replaceAsExpected(path: 'lib/app/widgets/'),
     'model': replaceAsExpected(path: 'lib/app/data/models'),
     'init': replaceAsExpected(path: 'lib/'),
@@ -31,7 +31,8 @@ class Structure {
     'navigation': replaceAsExpected(
         path: 'lib/infrastructure/navigation/navigation.dart'),
     //generator files
-    'generate_locales': replaceAsExpected(path: 'lib/generated'),
+    'generate_locales':
+        replaceAsExpected(path: 'lib/app/common/services/localizations'),
   };
 
   static FileModel model(String? name, String command, bool wrapperFolder,

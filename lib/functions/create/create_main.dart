@@ -12,8 +12,8 @@ Future<bool> createMain() async {
   var main = File('${newFileModel.path}main.dart');
 
   if (main.existsSync()) {
-    /// apenas quem chama essa função é o create project e o init,
-    /// ambas funções iniciam um projeto e sobrescreve os arquivos
+    /// Only the create project and init functions call this function,
+    /// both functions initialize a project and overwrite the files.
 
     final menu = Menu([LocaleKeys.options_yes.tr, LocaleKeys.options_no.tr],
         title: LocaleKeys.ask_lib_not_empty.tr);

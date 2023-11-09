@@ -1,7 +1,7 @@
 import '../../common/utils/pubspec/pubspec_utils.dart';
 import '../interface/sample_interface.dart';
 
-/// [Sample] file from Module_View file creation.
+/// [Sample] file from Feature_View file creation.
 class GetViewSample extends Sample {
   final String _controllerDir;
   final String _viewName;

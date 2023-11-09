@@ -58,7 +58,7 @@ class ErrorCommand extends Command {
   }
 
   @override
-  String get hint => 'Print on erro';
+  String get hint => 'Print on error';
 
   @override
   String get codeSample => '';
@@ -72,7 +72,7 @@ class ErrorCommand extends Command {
 
 class NotFoundComannd extends Command {
   @override
-  String get commandName => 'Not Found Comannd';
+  String get commandName => 'Not Found Command';
 
   @override
   Future<void> execute() async {
@@ -80,7 +80,7 @@ class NotFoundComannd extends Command {
   }
 
   @override
-  String get hint => 'Not Found Comannd';
+  String get hint => 'Not Found Command';
 
   @override
   String get codeSample => '';

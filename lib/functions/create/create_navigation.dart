@@ -41,7 +41,7 @@ void addNavigation(String name) {
       lines.indexWhere((element) => element.contains('];'), indexStartNavClass);
 
   lines.insert(index, '''    GetPage(
-      name: Routes.${name.snakeCase.toUpperCase()},
+      name: Routes.${name.snakeCase.toLowerCase()},
       page: () => const ${name.pascalCase}Screen(),
       binding: ${name.pascalCase}ControllerBinding(),
     ),    ''');

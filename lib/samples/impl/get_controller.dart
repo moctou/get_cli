@@ -2,7 +2,7 @@ import 'package:recase/recase.dart';
 
 import '../interface/sample_interface.dart';
 
-/// [Sample] file from Module_Controller file creation.
+/// [Sample] file from Feature_Controller file creation.
 class ControllerSample extends Sample {
   final String _fileName;
   final bool _isServer;

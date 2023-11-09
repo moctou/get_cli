@@ -1,0 +1,89 @@
+{
+    "ask": {
+      "existing_page": "La page [%s] existe déjà, voulez-vous la remplacer ?",
+      "name_to_project": "Quel est le nom du projet ?",
+      "company_domain": "Quel est le domaine de votre entreprise ?",
+      "model_name": "Impossible de définir automatiquement le nom du modèle, quel nom souhaitez-vous utiliser ?",
+      "package_already_installed": "Le package : %s est déjà installé, voulez-vous le mettre à jour ?",
+      "lib_not_empty": "Votre dossier lib n'est pas vide. Êtes-vous sûr de vouloir remplacer votre application ? \\n ATTENTION : Cette action est irréversible",
+      "ios_lang": "Quelle langue souhaitez-vous utiliser sur iOS ?",
+      "android_lang": "Quelle langue souhaitez-vous utiliser sur Android ?",
+      "use_null_safe": "Voulez-vous utiliser la null safety ?",
+      "use_linter": "Voulez-vous utiliser un linter ?",
+      "new_page_name": "Quel nouveau nom pour la page ?"
+    },
+    "error": {
+      "failed_to_connect": "Échec de la connexion avec %s",
+      "no_valid_file_or_url": "%s n'est pas un fichier ou une URL valide",
+      "unnecessary_parameter": "Le paramètre %s n'est pas nécessaire",
+      "unnecessary_parameter_plural": "Les paramètres %s ne sont pas nécessaires",
+      "nonexistent_directory": "Le répertoire %s n'existe pas.",
+      "empty_directory": "%s est vide",
+      "invalid_json": "%s n'est pas un fichier JSON valide",
+      "special_characters_in_key": "Les caractères spéciaux ne sont pas autorisés dans la clé. \\n clé : %s",
+      "required_path": "Il est nécessaire de fournir le chemin du fichier ou du répertoire",
+      "invalid_dart": "%s n'est pas un fichier Dart valide",
+      "invalid_file_or_directory": "%s n'est pas un fichier ou un répertoire valide",
+      "package_not_found": "Le package : %s n'est pas trouvé sur pub.dev",
+      "cli_version_not_found": "Impossible de trouver la version que vous avez installée.",
+      "update_cli": "Une erreur s'est produite lors de la mise à jour de get_cli",
+      "folder_not_found": "Répertoire %s non trouvé",
+      "file_not_found": "Fichier non trouvé dans %s",
+      "access_denied": "Accès refusé à %s",
+      "unexpected": "Une erreur inattendue s'est produite :",
+      "no_package_to_remove": "Entrez le nom du package que vous souhaitez supprimer"
+    },
+    "example": "Exemple :",
+    "warning": "Attention :",
+    "hint": {
+      "create": {
+        "controller": "Générer un contrôleur",
+        "page": "Utilisé pour générer des pages",
+        "project": "Utilisé pour générer un nouveau projet",
+        "provider": "Créer un nouveau Provider",
+        "screen": "Générer un nouvel écran",
+        "view": "Générer une vue"
+      },
+      "generate": {
+        "locales": "Générer un fichier de traduction à partir de fichiers JSON",
+        "model": "Générer une classe modèle à partir de JSON"
+      },
+      "help": "Afficher cette aide",
+      "init": "Générer la structure choisie sur un projet existant :",
+      "install": "Utilisé pour installer un package dans votre projet (dépendances) :",
+      "remove": "Utilisé pour supprimer un package dans votre projet (dépendances) :",
+      "sort": "Trier les imports et formater les fichiers Dart",
+      "update": "Mettre à jour GET_CLI",
+      "version": "Afficher la version actuelle de la CLI"
+    },
+    "info": {
+      "unnecessary_flag": "Le drapeau %s n'est pas nécessaire",
+      "unnecessary_flag_prural": "Les drapeaux %s ne sont pas nécessaires",
+      "package_not_installed": "Le package : %s n'est pas installé dans cette application",
+      "cli_last_version_already_installed": "La dernière version de get_cli est déjà installée",
+      "no_file_overwritten": "Aucun fichier n'a été écrasé",
+      "update_available": "Une mise à jour est disponible ! Version actuellement installée : %s",
+      "update_available2": "Nouvelle version disponible : %s. Veuillez exécuter :"
+    },
+    "options": {
+      "yes": "Oui !",
+      "no": "Non",
+      "rename": "Je veux renommer"
+    },
+    "optional_parameters": "Paramètres optionnels : %s",
+    "sucess": {
+      "page_create": "Page %s créée avec succès.",
+      "locale_generate": "Fichiers de localisation générés avec succès.",
+      "getx_pattern_generated": "Structure GetX Pattern générée avec succès.",
+      "clean_Pattern_generated": "Structure CLEAN Pattern générée avec succès.",
+      "file_formatted": " '%s' a été formaté avec succès",
+      "package_removed": "Package : %s supprimé !",
+      "package_installed": "Package : %s installé !",
+      "update_cli": "Mise à jour terminée",
+      "add_controller_in_bindings": "%s a été ajouté aux bindings à l'emplacement : %s'",
+      "navigation_added": "Navigation %s ajoutée avec succès.",
+      "file_created": "Fichier : %s créé avec succès à l'emplacement : %s",
+      "route_created": "Route %s créée avec succès."
+    }
+  }
+  

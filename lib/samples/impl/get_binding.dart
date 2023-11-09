@@ -3,7 +3,7 @@ import 'package:recase/recase.dart';
 import '../../common/utils/pubspec/pubspec_utils.dart';
 import '../interface/sample_interface.dart';
 
-/// [Sample] file from Module_Binding file creation.
+/// [Sample] file from Feature_Binding file creation.
 class BindingSample extends Sample {
   final String _fileName;
   final String _controllerDir;

@@ -37,8 +37,7 @@ void addRoute(String nameRoute, String bindingDir, String viewDir) {
   if (PubspecUtils.extraFolder ?? true) {
     pathSplit.removeLast();
   }
-
-  pathSplit.removeWhere((element) => element == 'app' || element == 'modules');
+  pathSplit.removeWhere((element) => element == 'app' || element == 'features');
 
   for (var i = 0; i < pathSplit.length; i++) {
     pathSplit[i] =
@@ -49,7 +48,7 @@ void addRoute(String nameRoute, String bindingDir, String viewDir) {
   var declareRoute = 'static const ${nameRoute.snakeCase.toUpperCase()} =';
   var line = "$declareRoute '/$route';";
   if (supportChildrenRoutes) {
-    line = '$declareRoute ${_pathsToRoute(pathSplit)};';
+    line = '$declareRoute ${_pathToRoute(pathSplit)};';
     var linePath = "$declareRoute '/${pathSplit.last}';";
     content = content.appendClassContent('_Paths', linePath);
   }
@@ -70,14 +69,22 @@ void addRoute(String nameRoute, String bindingDir, String viewDir) {
 }
 
 /// Create routes from the path
-String _pathsToRoute(List<String> pathSplit) {
+// String _pathsToRoute(List<String> pathSplit) {
+//   var sb = StringBuffer();
+//   for (var e in pathSplit) {
+//     sb.write('_Paths.');
+//     sb.write(e.snakeCase.toLowerCase());
+//     if (e != pathSplit.last) {
+//       sb.write(' + ');
+//     }
+//   }
+//   return sb.toString();
+// }
+/// Create routes from the path
+String _pathToRoute(List<String> pathSplit) {
   var sb = StringBuffer();
-  for (var e in pathSplit) {
-    sb.write('_Paths.');
-    sb.write(e.snakeCase.toUpperCase());
-    if (e != pathSplit.last) {
-      sb.write(' + ');
-    }
-  }
+  sb.write('_Paths.');
+  sb.write(pathSplit.last.snakeCase.toLowerCase());
+
   return sb.toString();
 }
