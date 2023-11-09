@@ -40,12 +40,11 @@ void addRoute(String nameRoute, String bindingDir, String viewDir) {
   pathSplit.removeWhere((element) => element == 'app' || element == 'features');
 
   for (var i = 0; i < pathSplit.length; i++) {
-    pathSplit[i] =
-        pathSplit[i].snakeCase.snakeCase.toLowerCase().replaceAll('_', '-');
+    pathSplit[i] = pathSplit[i].snakeCase.camelCase.replaceAll('_', '-');
   }
   var route = pathSplit.join('/');
 
-  var declareRoute = 'static const ${nameRoute.snakeCase.toLowerCase()} =';
+  var declareRoute = 'static const ${nameRoute.camelCase} =';
   var line = "$declareRoute '/$route';";
   if (supportChildrenRoutes) {
     line = '$declareRoute ${_pathToRoute(pathSplit)};';
@@ -73,7 +72,7 @@ void addRoute(String nameRoute, String bindingDir, String viewDir) {
 //   var sb = StringBuffer();
 //   for (var e in pathSplit) {
 //     sb.write('_Paths.');
-//     sb.write(e.snakeCase.toLowerCase());
+//     sb.write(e.camelCase);
 //     if (e != pathSplit.last) {
 //       sb.write(' + ');
 //     }
@@ -84,7 +83,7 @@ void addRoute(String nameRoute, String bindingDir, String viewDir) {
 String _pathToRoute(List<String> pathSplit) {
   var sb = StringBuffer();
   sb.write('_Paths.');
-  sb.write(pathSplit.last.snakeCase.toLowerCase());
+  sb.write(pathSplit.last.camelCase);
 
   return sb.toString();
 }
