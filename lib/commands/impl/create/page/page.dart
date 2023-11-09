@@ -41,8 +41,9 @@ class CreatePageCommand extends Command {
   String? get hint => LocaleKeys.hint_create_page.tr;
 
   void checkForAlreadyExists(String? name) {
-    var newFileModel =
-        Structure.model(name, 'page', true, on: onCommand, folderName: name);
+    //todo fix page name casing to snake_case
+    var newFileModel = Structure.model(name, 'page', true,
+        on: onCommand, folderName: name!.trim().snakeCase);
     var pathSplit = Structure.safeSplitPath(newFileModel.path!);
 
     pathSplit.removeLast();

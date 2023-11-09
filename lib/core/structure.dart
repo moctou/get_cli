@@ -65,7 +65,7 @@ class Structure {
           contains.path,
           ReCase(name!).snakeCase,
           createWithWrappedFolder: wrapperFolder,
-          folderName: folderName,
+          folderName: folderName ?? folderName!.snakeCase,
         ),
         commandName: command,
       );
@@ -76,7 +76,7 @@ class Structure {
         _paths[command],
         ReCase(name!).snakeCase,
         createWithWrappedFolder: wrapperFolder,
-        folderName: folderName,
+        folderName: folderName!.snakeCase,
       ),
       commandName: command,
     );
