@@ -21,11 +21,11 @@ get create project
 // To generate the chosen structure on an existing project:
 get init
 
-// To create a page:
+// To create a feature:
 // (Pages have controller, view, and binding)
 // Note: you can use any name, ex: `get create page:login`
 // Nota: use this option if the chosen structure was Getx_pattern
-get create page:home
+get create feature:home
 
 // To create a screen
 // (Screens have controller, view, and binding)
