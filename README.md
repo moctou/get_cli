@@ -7,10 +7,8 @@ Official CLI for the GetX™ framework.
 
 ```dart
 // To install:
-pub global activate get_cli 
-// (to use this add the following to system PATH: [FlutterSDKInstallDir]\bin\cache\dart-sdk\bin
 
-flutter pub global activate get_cli
+flutter pub global activate https://github.com/moctou/get_cli.git
 
 // To create a flutter project in the current directory:
 // Note: By default it will take the folder's name as project name
@@ -121,7 +119,7 @@ It allows you to choose between two structures, [getx_pattern](https://kauemurak
 ### Create page
 
 ```shell
-  get create page:name
+  get create feature:name
 ```
 
 this command allows you to create modules, it is recommended for users who chose to use getx_pattern.
@@ -131,7 +129,7 @@ creates the view, controller and binding files, in addition to automatically add
 You can create a module within another module.
 
 ```shell
-  get create page:name on other_module
+  get create feature:name on other_module
 ```
 
 When creating a new project now and use `on` to create a page the CLI will use [children pages](https://github.com/jonataslaw/getx/blob/master/CHANGELOG.md#3210---big-update).
